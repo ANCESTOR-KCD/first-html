@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+       <title>KCD EMPIRE</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="styles.css">
+ </head>
+    <body>  
+
+        <div class ="container">
+            <div class = "nav">
+                <div class= left-side>
+
+                    <div class="nav-link active-nav-link">
+                            <a href="pratice.html">Home</a>
+                    </div>
+                        
+                    <div class="nav-link ">
+                            <a href="about.html">About</a>
+                    </div>  
+
+                    <div class="nav-link">
+                        <a href="https://Google.com">Google</a>
+                    </div> 
+                    
+                    <div class="nav-link">
+                        <a href="https://gogoanime.cm">Animes</a>
+                    </div>  
+                    
+                    <div class="nav-link">
+                        <a href="https://netnaija.com">Movies</a>
+                    </div>
+                </div>
+
+                <div class=right-side>
+                    <div class="brand">
+                        <div> kcd</div>
+                    </div>
+
+                </div>
+
+              
+                
+            </div>
+            <div class="content">
+                <div class="portfolio-items">
+                    
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-background" style="background-image:url(jps/white.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="jps/New/logo1.jpg">
+                            </div>
+
+                            <div class="subtitles">
+                                I guess a good car is really nice
+                            </div>
+                            
+                        </div>
+                    </div>  
+                    
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-background" style="background-image:url(jps/white.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="jps/New/logo2.jpg">
+                            </div>
+
+                            <div class="subtitles">
+                                Got to get that cup of coffee for the day
+                            </div>
+                            
+                        </div>
+                    </div>  
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-background" style="background-image:url(jps/white.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="jps/New/logo3.jpg">
+                            </div>
+
+                            <div class="subtitles">
+                               I like me some meat and buns
+                            </div>
+                            
+                        </div>
+                    </div>  
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-img-background" style="background-image:url(jps/white.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="jps/New/logo4.jpg">
+                            </div>
+
+                            <div class="subtitles">
+                                Welcome to the land of money wastage
+                            </div>
+                            
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+           
+
+        </div>
+    </body>
+    <script>
+        const portfolioItems= document.querySelectorAll('.portfolio-item')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                console.log(portfolioItem.childNodes[1].classList);
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                console.log(portfolioItem.childNodes[1].classList);
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+</html>
